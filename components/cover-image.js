@@ -11,6 +11,9 @@ export default function CoverImage({ title, url, slug, width, height, sizes }) {
     >
       <Image
         layout={sizes ? "responsive" : "intrinsic"}
+        loader={({ src, width, quality }) => {
+          return `${src}?w=${width}&q=${quality || 75}`;
+        }}
         sizes={sizes || ""}
         width={width}
         height={height}
