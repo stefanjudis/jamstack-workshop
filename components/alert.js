@@ -24,7 +24,7 @@ export default function Alert({ preview }) {
             <>
               The source code for this blog is{" "}
               <a
-                href={`https://github.com/stefanjudis/jamstack-workshop-start`}
+                href={`https://github.com/stefanjudis/jamstack-workshop`}
                 className="underline transition-colors duration-200 hover:text-success">
                 available on GitHub
               </a>
